@@ -2,12 +2,24 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Crypto Class</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="root"></div>
-    <h1>Hola Mundo</h1>
+    <h1>Bienvenido a Crypto Class</h1>
+     <form id="cuerpo">
+        <input type="number" name="offset" id="valor_movimiento"><br><br>
+        <input type="text"   name="string" id="sujeto" placeholder="Forma tu oración"><br><br>
+        <!-- <input type="text" name="predicado" id="predicado"><br><br> -->
+        <textarea rows="5" cols="30" name="respuesta_cifrada" id="cuadro_respuesta"></textarea><br>
+        <!-- <input type="hidden" name="texto" value="Z87X09RF"> -->
+        <br>
+        <input type="submit" value="Cifrar" id="cifrar" onclick="cifrar()">
+        <input type="submit" value="Descifrar" id="descifrar" onclick="descifrar()">
+        <input type="button" value="Volver al inicio" id="volver" onclick="volverinicio()"><br>
+        
+     </form>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
