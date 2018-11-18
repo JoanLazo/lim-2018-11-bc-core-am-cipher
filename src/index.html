@@ -7,19 +7,72 @@
   </head>
   <body>
     <div id="root"></div>
-    <h1>Bienvenido a Crypto Class</h1>
-     <form id="cuerpo">
-        <input type="number" name="offset" id="valor_movimiento"><br><br>
-        <input type="text"   name="string" id="sujeto" placeholder="Forma tu oración"><br><br>
-        <!-- <input type="text" name="predicado" id="predicado"><br><br> -->
-        <textarea rows="5" cols="30" name="respuesta_cifrada" id="cuadro_respuesta"></textarea><br>
-        <!-- <input type="hidden" name="texto" value="Z87X09RF"> -->
-        <br>
-        <input type="submit" value="Cifrar" id="cifrar" onclick="cifrar()">
-        <input type="submit" value="Descifrar" id="descifrar" onclick="descifrar()">
-        <input type="button" value="Volver al inicio" id="volver" onclick="volverinicio()"><br>
-        
-     </form>
+    <div id="inicio">
+      <section>
+        <head>
+          <h1>Crypto Class</h1>
+        </head>
+        <main>
+            <h1>Bienvenido a Crypto Class</h1>
+            <p>¿Qué es Cripto Class?</p>
+            <p>Cripto Class es un juego educativo donde podras crear oraciones compuestas y descubrir el mensaje encriptado que tiene oculto.
+             <P>Pasos para jugar:</P>
+             <ol>
+               <li>Piensa en una <span>oración compuesta</span>,¡la que tu desees!. Si no recuerdas que es una  oración compuesta <a href="">haz click.</a></li>
+               <li>Escoge una opcion para ver que pasa con tu oración compuesta.</li>
+               <li>Piensa en como ah cambio tu oración y en que letra se ha remplezado.</li>
+               <li>¡Intentalo otra vez!</li>
+             </ol>
+            <button id="cifrar_inicio" onclick="cifrar_inicio()">Cifrar</button>
+            <button id="descifrar_inicio" onclick="descifrar_inicio()">Descifrar</button>
+        </main>
+          <figure>
+              <p>¿Qué es cifrar o descifrar?</p>
+                <img src="" alt="">
+            </figure>
+        </section>
+    </div>
+   
+    <div>
+      <main>
+          <form id="cuerpo">
+              <br><label>Escribe tu oración compuesta</label> <br> <br>
+               <textarea type="text" rows="5" cols="60" name="text" id="text" placeholder="Forma tu oración"></textarea><br><br>
+               <br>
+               <label>Desliza la barra para escoger la clave secreta de tu oración</label> <br>
+               <input type="range" min="1" max="25" value="1" name="offset" id="desplazamiento"><br><br>
+              
+               <label for="respuesta">Mira tu oración secreta</label> <br> <br>
+               <textarea name="textorespuesta" id="respuesta" cols="60" rows="5"></textarea>
+               <br><br>
+               <input type="button" id="cifrar" value="Cifrar" onclick="cifrado()">
+               
+               <input type="button" value="Volver al inicio" id="volver" onclick="volverinicio()"><br>
+            </form>
+      </main>
+    </div>
+
+    <div>
+        <main>
+            <form id="cuerpo_descifrar">
+                <br><label>Escribe tu oración compuesta secreta</label> <br> <br>
+                 <textarea type="text" rows="5" cols="60" name="text1" id="text2" placeholder="Forma tu oración"></textarea><br><br>
+                 <br>
+                 <label>Desliza la barra para escoger la clave secreta de tu oración</label> <br>
+                 <input type="range" min="1" max="25" value="1" name="offset" id="desplazamiento2"><br><br>
+                
+                 <label for="respuesta">Mira tu oración descifrada</label> <br> <br>
+                 <textarea name="textorespuesta" id="respuesta2" cols="60" rows="5"></textarea>
+                 <br><br>
+                 
+                 <input type="button" id="descifrar2" value="Descifrar" onclick="descifrar_respuesta()">
+                 <input type="button" value="Volver al inicio" id="volver2" onclick="volverinicio()"><br>
+              </form>
+        </main>
+      </div>
+     <footer>
+       
+     </footer>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
