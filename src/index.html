@@ -4,57 +4,61 @@
     <meta charset="utf-8">
     <title>Crypto Class</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil" rel="stylesheet">
   </head>
   <body>
     <div id="root"></div>
     <div id="inicio">
       <section>
-        <head>
+        <head div="head">
           <h1>Crypto Class</h1>
         </head>
-        <main>
-            <h1>Bienvenido a Crypto Class</h1>
-            <p>¿Qué es Cripto Class?</p>
-            <p>Cripto Class es un juego educativo donde podras crear oraciones compuestas y descubrir el mensaje encriptado que tiene oculto.
-             <P>Pasos para jugar:</P>
-             <ol>
-               <li>Piensa en una <span>oración compuesta</span>,¡la que tu desees!. Si no recuerdas que es una  oración compuesta <a href="">haz click.</a></li>
-               <li>Escoge una opcion para ver que pasa con tu oración compuesta.</li>
-               <li>Piensa en como ah cambio tu oración y en que letra se ha remplezado.</li>
-               <li>¡Intentalo otra vez!</li>
-             </ol>
-            <button id="cifrar_inicio" onclick="cifrar_inicio()">Cifrar</button>
-            <button id="descifrar_inicio" onclick="descifrar_inicio()">Descifrar</button>
+        <main class="inicio">
+          <div id="textoinicio">
+              <h1>Bienvenido a Crypto Class</h1>
+              <p>¿Qué es Cripto Class?</p>
+              <p>Cripto Class es un juego educativo donde podras crear oraciones compuestas y descubrir el mensaje encriptado que tiene oculto.
+               <P>Pasos para jugar:</P>
+               <ol>
+                 <li>Piensa en una <span>oración compuesta</span> .¡La que tu desees!. Si no recuerdas que es una  oración compuesta <a href="">haz click.</a></li>
+                 <li>Escoge una opcion para ver que pasa con tu oración compuesta.</li>
+                 <li>Piensa en como ah cambio tu oración y en que letra se ha remplezado.</li>
+                 <li>¡Intentalo otra vez!</li>
+               </ol>
+              </div>
+               <figure class="duda">
+                  <p>¿Qué es cifrar o descifrar?</p>
+          
+                  <a href=""><img class="" src="https://image.flaticon.com/icons/svg/201/201571.svg" alt="Dudas sobre cifrar y descifrar" width="100px" height="105px" ></a>
+              </figure>
+            <button class="button" id="cifrar_inicio" onclick="cifrar_inicio()">Cifrar</button>
+            <button class="button" id="descifrar_inicio" onclick="descifrar_inicio()">Descifrar</button>
         </main>
-          <figure>
-              <p>¿Qué es cifrar o descifrar?</p>
-                <img src="" alt="">
-            </figure>
         </section>
     </div>
    
     <div>
       <main>
-          <form id="cuerpo">
+          <form id="cuerpo" class="cifrar">
               <br><label>Escribe tu oración compuesta</label> <br> <br>
                <textarea type="text" rows="5" cols="60" name="text" id="text" placeholder="Forma tu oración"></textarea><br><br>
                <br>
                <label>Desliza la barra para escoger la clave secreta de tu oración</label> <br>
-               <input type="range" min="1" max="25" value="1" name="offset" id="desplazamiento"><br><br>
+               <input class="barra" type="range" min="1" max="25" value="1" name="offset" id="desplazamiento" class="barra"><br><br>
               
                <label for="respuesta">Mira tu oración secreta</label> <br> <br>
                <textarea name="textorespuesta" id="respuesta" cols="60" rows="5"></textarea>
                <br><br>
-               <input type="button" id="cifrar" value="Cifrar" onclick="cifrado()">
+               <input class="button" type="button" id="cifrar" value="Cifrar" onclick="cifrado()">
                
-               <input type="button" value="Volver al inicio" id="volver" onclick="volverinicio()"><br>
+               <input class="button" type="button" value="Volver al inicio" id="volver" onclick="volverinicio()"><br>
             </form>
       </main>
     </div>
 
     <div>
         <main>
-            <form id="cuerpo_descifrar">
+            <form id="cuerpo_descifrar" class="descifrar">
                 <br><label>Escribe tu oración compuesta secreta</label> <br> <br>
                  <textarea type="text" rows="5" cols="60" name="text1" id="text2" placeholder="Forma tu oración"></textarea><br><br>
                  <br>
@@ -65,8 +69,8 @@
                  <textarea name="textorespuesta" id="respuesta2" cols="60" rows="5"></textarea>
                  <br><br>
                  
-                 <input type="button" id="descifrar2" value="Descifrar" onclick="descifrar_respuesta()">
-                 <input type="button" value="Volver al inicio" id="volver2" onclick="volverinicio()"><br>
+                 <input class="button" type="button" id="descifrar2" value="Descifrar" onclick="descifrar_respuesta()">
+                 <input class="button" type="button" value="Volver al inicio" id="volver2" onclick="volverinicio()"><br>
               </form>
         </main>
       </div>
