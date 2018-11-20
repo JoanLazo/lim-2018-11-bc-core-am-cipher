@@ -1,9 +1,8 @@
-// declarando la variales texto, desplazamiento y respuesta
-//   const inputString  = document.getElementById("text");
-//   const offsetValue = document.getElementById("desplazamiento");
+
+
+
   const textResult = document.getElementById("respuesta");
   const botonCifrar = document.getElementById("btn-cifrar");
-  const botonDescifrar = document.getElementById("btn-decifrar");
 
   function cifrar(inputString,offsetValue){
     let subjectText;     
@@ -18,8 +17,7 @@
     return textResultado;
     }
 
-    
-    console.log(cifrar("HolaLLL",3));
+    // console.log(cifrar("HolaLLL",3));
  
     botonCifrar.addEventListener("click", () => {
      const inputString = document.getElementById("text").value;
@@ -28,17 +26,28 @@
     })
 
 
+
+
+    const textResultOne = document.getElementById("respuesta2");
+    const botonDescifrarTwo = document.getElementById("btn-descifrar");
+
     function descifrar(inputString,offsetValue){
-        let subjectText;     
-        let subjectAscii;
-        let textResult = "";
+        let subjectTextTwo;     
+        let subjectAsciiTwo;
+        let textResultTwo = "";
     
         for(let i=0; i<inputString.length ;i++){
-         subjectText = inputString[i].charCodeAt(); // obtenemos su codigo ASCII
-         subjectAscii = subjectText - offsetValue; // al valor de la letra de sumamos el desplazamiento
-         textResult = textResult.concat(String.fromCharCode(subjectAscii)); // se unio el valor ascci con el resultado fromCharCode devolvera el valor en letras
+         subjectTextTwo = inputString[i].charCodeAt(); // obtenemos su codigo ASCII
+         subjectAsciiTwo = subjectTextTwo - offsetValue; // al valor de la letra de sumamos el desplazamiento
+         textResultTwo = textResultTwo.concat(String.fromCharCode(subjectAsciiTwo)); // se unio el valor ascci con el resultado fromCharCode devolvera el valor en letras
         }
-        return textResult;
+        return textResultTwo;
         }
 
-console.log(descifrar("krodOOO",3));
+// console.log(descifrar("krodOOO",3));
+
+      botonDescifrarTwo.addEventListener("click", () => {
+        const inputString = document.getElementById("text2").value;
+        const offsetValue = document.getElementById("desplazamiento2").value;
+        textResultOne.innerHTML = descifrar(inputString,parseInt(offsetValue))
+      })
