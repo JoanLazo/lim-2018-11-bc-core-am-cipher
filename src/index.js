@@ -1,22 +1,31 @@
 
+  //funcion cifrar
   const textResult = document.getElementById("respuesta");
   const botonCifrar = document.getElementById("btn-cifrar");
 
   function cifrar(inputString,offsetValue){
     let subjectText;     
-    let subjectAscii;
-    // let spaceText= " ";
+    let subjectAscii;  
     let textResultado = "";
-
+    // obtenemos su codigo ASCII
     for(let i=0; i<inputString.length ;i++){
-     subjectText = inputString[i].charCodeAt(); // obtenemos su codigo ASCII
+
+     subjectText = inputString[i].charCodeAt(); 
+
+     if(subjectText === 32){
+       subjectText += " " - offsetValue;
+     }
+     if(subjectText <= 65 && subjectText >= 90){
+      subjectText += (inputString[i].toUpperCase()-65) % 26 + 65;
+     }
+     if(subjectText <= 97 && subjectText >= 122){
+       subjectText += (inputString[i].toLowerCase()-97) % 26 + 97;
+     }
      subjectAscii = subjectText + offsetValue;
      textResultado = textResultado.concat(String.fromCharCode(subjectAscii));
     }
     return textResultado;
-    }
-
-    // console.log(cifrar("HolaLLL",3));
+    } 
  
     botonCifrar.addEventListener("click", () => {
      const inputString = document.getElementById("text").value;
@@ -25,7 +34,7 @@
     })
 
 
-
+//funcion descifrar
 
     const textResultOne = document.getElementById("respuesta2");
     const botonDescifrarTwo = document.getElementById("btn-descifrar");
@@ -34,11 +43,20 @@
         let subjectTextTwo;     
         let subjectAsciiTwo;
         let textResultTwo = "";
-        let capitalLetter;
-    
+        
         for(let i=0; i<inputString.length ;i++){
-         capitalLetter = (i=== i.toUpperCase()) ? true : false;
-         subjectTextTwo = inputString[i].toLowerCase().charCodeAt(); // obtenemos su codigo ASCII
+
+         subjectTextTwo = inputString[i].charCodeAt();
+
+         if(subjectTextTwo === 32){
+          subjectTextTwo += " ";
+        }
+        if(subjectTextTwo <= 65 && subjectTextTwo >= 90){
+         subjectTextTwo += (inputString[i].toUpperCase()-90) % 26 + 90;
+        }
+        if(subjectTextTwo <= 97 && subjectTextTwo >= 122){
+          subjectTextTwo += (inputString[i].toLowerCase()-122) % 26 + 122;
+        }
          subjectAsciiTwo = subjectTextTwo - offsetValue; // al valor de la letra de sumamos el desplazamiento
          textResultTwo = textResultTwo.concat(String.fromCharCode(subjectAsciiTwo)); // se unio el valor ascci con el resultado fromCharCode devolvera el valor en letras
         }
