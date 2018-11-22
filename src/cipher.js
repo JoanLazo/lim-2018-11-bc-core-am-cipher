@@ -1,6 +1,6 @@
 window.cipher = {
   
-  cipher.encode = cipherEncode(inputString,offsetValue) =>{
+  cipher.encode(offsetValue,inputString) : cipherEncode => {
     let subjectText;     
     let subjectAscii;  
     let textResultado = "";
@@ -23,9 +23,9 @@ window.cipher = {
     }
     return textResultado;
     }
-  };
 
-    cipher.decode =  cipherDecode(inputString,offsetValue) => {
+
+    cipher.decode(offsetValue,inputString) :  cipherDecode => {
       let subjectTextTwo;     
       let subjectAsciiTwo;
       let textResultTwo = "";
@@ -49,3 +49,4 @@ window.cipher = {
       return textResultTwo;
       }
 };
+
