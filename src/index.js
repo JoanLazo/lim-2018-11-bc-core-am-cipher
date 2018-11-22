@@ -7,21 +7,21 @@
     let subjectText;     
     let subjectAscii;  
     let textResultado = "";
-    // obtenemos su codigo ASCII
+    
     for(let i=0; i<inputString.length ;i++){
 
      subjectText = inputString[i].charCodeAt(); 
 
      if(subjectText === 32){
-       subjectText += " " - offsetValue;
+       subjectText += " ";
      }
-     if(subjectText <= 65 && subjectText >= 90){
-      subjectText += (inputString[i].toUpperCase()-65) % 26 + 65;
+     if(subjectText >= 65 && subjectText <= 90){
+      subjectText = (subjectText - 65 + offsetValue) % 26 + 65;
      }
-     if(subjectText <= 97 && subjectText >= 122){
-       subjectText += (inputString[i].toLowerCase()-97) % 26 + 97;
+     if(subjectText >= 97 && subjectText <= 122){
+       subjectText = (subjectText - 97 + offsetValue) % 26 + 97;
      }
-     subjectAscii = subjectText + offsetValue;
+     subjectAscii = subjectText;
      textResultado = textResultado.concat(String.fromCharCode(subjectAscii));
     }
     return textResultado;
@@ -51,19 +51,18 @@
          if(subjectTextTwo === 32){
           subjectTextTwo += " ";
         }
-        if(subjectTextTwo <= 65 && subjectTextTwo >= 90){
-         subjectTextTwo += (inputString[i].toUpperCase()-90) % 26 + 90;
+        if(subjectTextTwo >= 65 && subjectTextTwo <= 90){
+         subjectTextTwo = (subjectTextTwo - 90 - offsetValue) % 26 + 90;
         }
-        if(subjectTextTwo <= 97 && subjectTextTwo >= 122){
-          subjectTextTwo += (inputString[i].toLowerCase()-122) % 26 + 122;
+        if(subjectTextTwo >= 97 && subjectTextTwo <= 122){
+          subjectTextTwo = (subjectTextTwo - 122 - offsetValue) % 26 + 122;
         }
-         subjectAsciiTwo = subjectTextTwo - offsetValue; // al valor de la letra de sumamos el desplazamiento
+         subjectAsciiTwo = subjectTextTwo;
          textResultTwo = textResultTwo.concat(String.fromCharCode(subjectAsciiTwo)); // se unio el valor ascci con el resultado fromCharCode devolvera el valor en letras
         }
         return textResultTwo;
         }
 
-// console.log(descifrar("krodOOO",3));
 
       botonDescifrarTwo.addEventListener("click", () => {
         const inputString = document.getElementById("text2").value;
