@@ -3,7 +3,7 @@
   const textResult = document.getElementById("respuesta");
   const botonCifrar = document.getElementById("btn-cifrar");
 
-  function cifrar(inputString,offsetValue){
+  const cipherEncode =  (inputString,offsetValue) => {
     let subjectText;     
     let subjectAscii;  
     let textResultado = "";
@@ -30,7 +30,7 @@
     botonCifrar.addEventListener("click", () => {
      const inputString = document.getElementById("text").value;
      const offsetValue = document.getElementById("desplazamiento").value;
-     textResult.innerHTML = cifrar(inputString,parseInt(offsetValue))
+     textResult.innerHTML = cipherEncode(inputString,parseInt(offsetValue))
     })
 
 
@@ -39,7 +39,7 @@
     const textResultOne = document.getElementById("respuesta2");
     const botonDescifrarTwo = document.getElementById("btn-descifrar");
 
-    function descifrar(inputString,offsetValue){
+    const cipherDecode = (inputString,offsetValue) => {
         let subjectTextTwo;     
         let subjectAsciiTwo;
         let textResultTwo = "";
@@ -67,7 +67,7 @@
       botonDescifrarTwo.addEventListener("click", () => {
         const inputString = document.getElementById("text2").value;
         const offsetValue = document.getElementById("desplazamiento2").value;
-        textResultOne.innerHTML = descifrar(inputString,parseInt(offsetValue))
+        textResultOne.innerHTML = cipherDecode(inputString,parseInt(offsetValue))
       })
 
   //ocultando partes de div cifrar y descifrar
