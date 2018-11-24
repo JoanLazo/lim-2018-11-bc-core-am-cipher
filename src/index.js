@@ -1,73 +1,25 @@
 
-  //funcion cifrar
+  //funcion, boton cifrar
   const textResult = document.getElementById("respuesta");
   const botonCifrar = document.getElementById("btn-cifrar");
 
-  const cipherEncode =  (inputString,offsetValue) => {
-    let subjectText;     
-    let subjectAscii;  
-    let textResultado = "";
-    
-    for(let i=0; i<inputString.length ;i++){
-
-     subjectText = inputString[i].charCodeAt(); 
-
-     if(subjectText === 32){
-       subjectText += " ";
-     }
-     if(subjectText >= 65 && subjectText <= 90){
-      subjectText = (subjectText - 65 + offsetValue) % 26 + 65;
-     }
-     if(subjectText >= 97 && subjectText <= 122){
-       subjectText = (subjectText - 97 + offsetValue) % 26 + 97;
-     }
-     subjectAscii = subjectText;
-     textResultado = textResultado.concat(String.fromCharCode(subjectAscii));
-    }
-    return textResultado;
-    } 
  
     botonCifrar.addEventListener("click", () => {
      const inputString = document.getElementById("text").value;
      const offsetValue = document.getElementById("desplazamiento").value;
-     textResult.innerHTML = cipherEncode(inputString,parseInt(offsetValue))
+     textResult.innerHTML = cipher.encode(inputString,parseInt(offsetValue))
     })
 
 
-//funcion descifrar
+//funcion , boton descifrar
 
     const textResultOne = document.getElementById("respuesta2");
     const botonDescifrarTwo = document.getElementById("btn-descifrar");
 
-    const cipherDecode = (inputString,offsetValue) => {
-        let subjectTextTwo;     
-        let subjectAsciiTwo;
-        let textResultTwo = "";
-        
-        for(let i=0; i<inputString.length ;i++){
-
-         subjectTextTwo = inputString[i].charCodeAt();
-
-         if(subjectTextTwo === 32){
-          subjectTextTwo += " ";
-        }
-        if(subjectTextTwo >= 65 && subjectTextTwo <= 90){
-         subjectTextTwo = (subjectTextTwo - 90 - offsetValue) % 26 + 90;
-        }
-        if(subjectTextTwo >= 97 && subjectTextTwo <= 122){
-          subjectTextTwo = (subjectTextTwo - 122 - offsetValue) % 26 + 122;
-        }
-         subjectAsciiTwo = subjectTextTwo;
-         textResultTwo = textResultTwo.concat(String.fromCharCode(subjectAsciiTwo)); // se unio el valor ascci con el resultado fromCharCode devolvera el valor en letras
-        }
-        return textResultTwo;
-        }
-
-
       botonDescifrarTwo.addEventListener("click", () => {
         const inputString = document.getElementById("text2").value;
         const offsetValue = document.getElementById("desplazamiento2").value;
-        textResultOne.innerHTML = cipherDecode(inputString,parseInt(offsetValue))
+        textResultOne.innerHTML = cipher.decode(inputString,parseInt(offsetValue))
       })
 
   //ocultando partes de div cifrar y descifrar
@@ -115,5 +67,24 @@ function volverDescifrar(){
 }
 btnIncioDescifrar.addEventListener("click",volverDescifrar);
 
+//mostrando el valor de range cifrar
+
+const inputRange = document.getElementById("desplazamiento");
+const claveRange = document.getElementById("clave");
+
+const valorRange = function range1(){
+  claveRange.innerHTML = inputRange.value;
+}
+
+inputRange.addEventListener("change",valorRange);
 
 
+//mostrando el valor de range descifrar
+const inputRange2 = document.getElementById("desplazamiento2")
+const claveRange2 = document.getElementById("clave2")
+
+const valorRange2 = function range2(){
+  claveRange2.innerHTML = inputRange2.value;
+}
+
+inputRange2.addEventListener("change",valorRange2);

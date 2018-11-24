@@ -49,7 +49,10 @@ textarea{
     text-align: justify;
 }
 
-
+ #texto1{
+     padding-top: 8%;
+     padding-bottom: 5%;
+ }
 .inicio ,.cifrar ,.descifrar{
     width: 450px;
     margin: auto;
@@ -58,22 +61,57 @@ textarea{
     box-sizing: border-box;
     margin-top: 40px;
     border-radius: 7px;
+    font-size: 18px;
     
 }
- #texto1 ,#barra1, #respuesta2{
-   margin-top: 15px;
- }
-
+ 
 input[type=range] {
     height: 34px;
     margin: 10px 0;
     width: 100%;
-    
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;   
+    background: #ffffff;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+
 }
+.barra::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #1b7480;
+    cursor: pointer;
+}
+
+.barra::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #1b7480;
+    cursor: pointer;
+}
+    
 #final{
     margin-bottom: 30px;
     margin-top: 30px;
 }
+
+.respuestacifrar , .respuestadescifrar{
+    padding: 25px;
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+    border-radius: 7px;
+    margin-top: 20px;
+}
+
 @media screen and (max-width:450px){
     .inicio ,.cifrar ,.descifrar{
         width: 100%;    

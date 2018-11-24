@@ -23,7 +23,7 @@
               <p>Cripto Class es un juego educativo donde podras crear oraciones compuestas y descubrir el mensaje encriptado que tiene oculto.
                <P>Pasos para jugar:</P> 
                <ol>
-                 <li>Piensa en una <span>oración compuesta</span> .¡La que tu desees!. Si no recuerdas que es una  oración compuesta <a href="https://joanlazo.blogspot.com/2018/11/oraciones-compuestas.html" target="_blank">haz click.</a></li>
+                 <li>Piensa en una <span>oración compuesta</span> .¡La que tu desees!. Si no recuerdas que es una  oración compuesta <a href="https://joanlazo.blogspot.com/2018/11/oraciones-compuestas.html" target="_blank" alt ="Como hacer una oración">haz click.</a></li>
                  <br>
                  <li>Escoge una opcion para ver que pasa con tu oración compuesta.</li>
                  <br>
@@ -47,19 +47,24 @@
       <main id="partecifrar">
           <form id="cuerpo" class="cifrar">
             <div id="texto1">
-                <label for="text">Escribe tu oración compuesta</label>
-                <textarea type="text" rows="5" cols="60" name="text" id="text" placeholder="Forma tu oración"></textarea>
+                <label for="text">Escribe tu oración compuesta
+                  <textarea type="text" rows="5" cols="60" name="text" id="text" placeholder="Forma tu oración"></textarea>
+                </label>
+                
             </div>
               
                <div>
                  <br>
-                  <label for="desplazamiento">Desliza la barra para escoger la clave secreta de tu oración</label>
-                  <input class="barra" type="range" min="1" max="100" value="1" name="offset" id="desplazamiento" class="barra">
+                  <label for="desplazamiento">Desliza la barra
+                    <input class="barra" type="range" min="1" max="100" value="1" name="offset" id="desplazamiento">
+                  </label>
+                  <label>Tu clave secreta es: <span id="clave"></span></label>
                </div>
                
-              <div>
-                  <label for="respuesta">Mira tu oración secreta</label>
-                  <textarea name="textorespuesta" id="respuesta" cols="60" rows="5" placeholder="Tu oración secreta es.."></textarea>
+              <div class="respuestacifrar">
+                  <label for="respuesta">Mira tu oración secreta
+                    <textarea name="textorespuesta" id="respuesta" cols="60" rows="5" placeholder="Tu oración secreta es.."></textarea>
+                  </label>
                   
               </div>
           
@@ -74,19 +79,25 @@
         <main id="partedescifrar">
             <form id="cuerpo_descifrar" class="descifrar">
               <div id="texto1">
-                  <label for="text2">Escribe tu oración compuesta secreta</label>
-                  <textarea type="text" rows="5" cols="60" name="text1" id="text2" placeholder="Forma tu oración"></textarea>
+                  <label for="text2">Escribe tu oración compuesta secreta
+                    <textarea type="text" rows="5" cols="60" name="text1" id="text2" placeholder="Forma tu oración"></textarea>
+                  </label>
                   
               </div>
                 <div>
                   <br>
-                    <label for="desplazamiento2">Desliza la barra para escoger la clave secreta de tu oración</label> 
-                    <input type="range" min="1" max="25" value="1" name="offset" id="desplazamiento2">
+                    <label for="desplazamiento2">Desliza la barra
+                      <input type="range" min="1" max="100" value="1" name="offset" id="desplazamiento2" class="barra">
+                    </label> 
+                    <label>Tu clave secreta es: <span id="clave2"></span></label>
+                    
                 </div>
                  
-                <div>
-                    <label for="respuesta2">Mira tu oración descifrada</label> 
-                    <textarea name="textorespuesta" id="respuesta2" cols="60" rows="5" placeholder="Tu oración descifrada es ..."></textarea>
+                <div class="respuestadescifrar">
+                    <label for="respuesta2">Mira tu oración descifrada
+                      <textarea name="textorespuesta" id="respuesta2" cols="60" rows="5" placeholder="Tu oración descifrada es ..."></textarea>
+                    </label> 
+                    
                 </div>
           
                  <input class="button" type="button" id="btn-descifrar" value="Descifrar">
