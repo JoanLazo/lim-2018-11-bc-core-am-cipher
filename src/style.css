@@ -49,7 +49,7 @@ textarea{
     text-align: justify;
 }
 
- #texto1{
+ #texto1 , #texto0{
      padding-top: 8%;
      padding-bottom: 5%;
  }

@@ -30,7 +30,7 @@ document.getElementById("partedescifrar").style.display = "none"
 const btnCifrar= document.getElementById("btn-inicio-cifrar");
 
 function jugarCifrar(){
-  const inicioCifrarJugar = document.getElementById("inicio").value; 
+   
   document.getElementById("partecifrar").style.display = "block"
   document.getElementById("inicio").style.display = "none"
 }
@@ -41,7 +41,7 @@ btnCifrar.addEventListener("click",jugarCifrar);
 const btnInicio = document.getElementById("btn-volver1");
 
 function volverIncioOne(){
-  const volverIncioCifrar = document.getElementById("partecifrar").value;
+
   document.getElementById("inicio").style.display = "block"
   document.getElementById("partecifrar").style.display = "none"
 }
@@ -51,7 +51,7 @@ btnInicio.addEventListener("click",volverIncioOne);
 const btnDescifrar = document.getElementById("btn-inicio-descifrar");
 
 function jugarDescifrar(){
-  const inicioDescifrarJugar = document.getElementById("inicio").value;
+
   document.getElementById("partedescifrar").style.display = "block"
   document.getElementById("inicio").style.display = "none"
 }
@@ -61,7 +61,7 @@ btnDescifrar.addEventListener("click",jugarDescifrar);
 //boton volver al inicio desde descifrar
 const  btnIncioDescifrar = document.getElementById("btn-volver2");
 function volverDescifrar(){
-  const inicioDescifrarVolver = document.getElementById("partedescifrar").value;
+  
   document.getElementById("inicio").style.display = "block"
   document.getElementById("partedescifrar").style.display = "none"
 }
