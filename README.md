@@ -54,6 +54,7 @@ Crypto Class permite al [docente 4.0](https://elpais.com/tecnologia/2012/06/08/a
 
 Crypto Class no solo permite al docente poder mejorar el aprendizaje significativo y conseguir competencias tecnológicas en sus alumnos sino que aplica una dinámica de [gamificación](https://iiemd.com/gamificacion/que-es-gamificacion) haciendo que los alumnos aprendan jugando.
 
+
 ### Para el estudiante
  La aplicación permite al estudiante poder resolver sus dudas tanto sobre la creación de oraciónes como los significados de cifrar y descifrar. 
 
