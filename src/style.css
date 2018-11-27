@@ -111,6 +111,10 @@ input[type=range] {
     border-radius: 7px;
     margin-top: 20px;
 }
+.links , .links2{
+    text-decoration: none;
+    color: rgb(74, 214, 214);
+}
 
 @media screen and (max-width:450px){
     .inicio ,.cifrar ,.descifrar{

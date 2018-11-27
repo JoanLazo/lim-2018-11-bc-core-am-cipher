@@ -52,3 +52,4 @@ window.cipher = {
   decode : cipherDecode,
 };
 
+
