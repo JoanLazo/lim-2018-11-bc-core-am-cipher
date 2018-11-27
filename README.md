@@ -17,7 +17,9 @@ Puede repetir el proceso tantas veces quieras volviendo al inicio, y escogiendo 
 
 ## Proceso y decisiones de diseño
 
+### Proceso
 
+### Decisiones de diseño
 
 ![crypto class](https://1.bp.blogspot.com/-j4i_dSknUfs/W_ygwdzPOAI/AAAAAAAAJmc/mHNjj8JXC2ULf3m6e76F3tHwsPVFgvl2gCLcBGAs/s640/cryptoclass.png)
 
@@ -28,12 +30,20 @@ Puede repetir el proceso tantas veces quieras volviendo al inicio, y escogiendo 
 
 ## Usuarios y su relación con el producto
 
+Los usuarios para esta aplicación son los docentes del área de primaria y alumnos de primaria de 1ero a 3ero.
 
+### Profesores
+
+Profesores 4.0 que buscan mejorar el aprendizaje significativo de sus alumnos innovando con herramientas de apoyo educativo. La falta de atención o interes por las clases genera la busqueda de nuevas alternativas para lograr un aprendizaje significativo que pueda ser usado en todo momento, que sea divertido para los alumnos y que este orientado a sus necesidades y de facil uso. Crypto Class es una alternativa para cubrir la necesidad de profesores en el área de primaria con el curso de comunicación ayudando en el uso de las TICS y mejorando la relación del alumno con el profesor.
+
+### Niños / estudiantes de primaria (1er , 2do y 3ero de primaria)
+
+Niños dentro de la generación Z, prefieren tener un aprendizaje que este relacionado o compartido con la tecnologia. Crypto Class es una alternativa para poder aprender jugando junto con la tecnologia, adaptandose a las necesidades de una educación 4.0.
 
 ## Problematica/Necesidad
 
+* Falta de interés en los niños de primaria por el curso de Comunicación/Gramática en el tema de formación de oraciones simple y compuestas. Dado esta problematica se creo Crypto Class donde los estudiantes con apoyo del docente podrá repasar la teoría de la formación de oraciones,  
 
-* 
 
 ## Solución de problema
 
