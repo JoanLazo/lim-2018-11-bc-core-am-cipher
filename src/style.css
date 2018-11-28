@@ -11,7 +11,7 @@ body{
 }
 
 textarea{
-background-color:    #fff;
+background-color: #fff;
 background-image:
 linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
 linear-gradient(#eee .1em, transparent .1em);
@@ -29,13 +29,13 @@ textarea{
 .button{
     background:#1b7480;
     color: #fff;
-    padding: 10px 30px;
+    padding: 10px 35px;
     border-radius: 7px;
     margin: auto;
     font-family:'Allerta Stencil', sans-serif;
     margin-top: 20px;
     margin-bottom: 10px;
-
+    
 }
 .button:hover{
     cursor: pointer;
@@ -53,8 +53,9 @@ textarea{
      padding-top: 8%;
      padding-bottom: 5%;
  }
+
 .inicio ,.cifrar ,.descifrar{
-    width: 450px;
+    width: 550px;
     margin: auto;
     background: rgba(0, 0,0, 0.5);
     padding: 10px 30px;
