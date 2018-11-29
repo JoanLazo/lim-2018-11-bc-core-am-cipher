@@ -52,9 +52,11 @@ Niños dentro de la [generación T](https://es.wikipedia.org/wiki/Generaci%C3%B3
 
 ## Problemática/Necesidad
 
-* Falta de interés en los niños de primaria por el curso de Comunicación/Gramática en el tema de formación de oraciones simple y compuestas. 
+* Falta de interés en los niños de primaria por el curso de Comunicación/Gramática en el tema de formación de oraciones simples y compuestas. 
 
 * Falta de herramientas educativas tecnológicas para el aprendizaje, con las cuales el docente puede generar un aprendizaje significativo adaptandoce a las necesidades y costumbres de una [generación T](https://es.wikipedia.org/wiki/Generaci%C3%B3n_T).
+
+* Reforzar las clases de Comunicación de forma divertida.
 
 
 ## Solución de problema
