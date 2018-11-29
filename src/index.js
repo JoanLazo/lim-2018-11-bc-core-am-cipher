@@ -23,8 +23,19 @@
       })
 
   //ocultando partes de div cifrar y descifrar
+document.getElementById("inicio").style.display = "none"
 document.getElementById("partecifrar").style.display = "none"
 document.getElementById("partedescifrar").style.display = "none"
+
+//boton para de inicio para empezar a jugar
+const btnJugarInicio= document.getElementById("btn-jugar");
+
+function btnJugar(){
+  document.getElementById("inicio").style.display = "block"
+  document.getElementById("parteinicio0").style.display = "none"
+}
+
+btnJugarInicio.addEventListener("click",btnJugar);
 
 //boton cifrar para jugar
 const btnCifrar= document.getElementById("btn-inicio-cifrar");
