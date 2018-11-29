@@ -1,6 +1,6 @@
 # Crypto Class
 
-[Crypto Class](https://joanlazo.blogspot.com/2018/11/cripto-class.html) es una juego educativo orientado a la  creación de oraciones, con el apoyo del docente un estudiante de primaria podrá conocer, identificar y crear sus propias oraciones, de forma divertida.
+[Crypto Class](https://joanlazo.blogspot.com/2018/11/cripto-class.html) es una juego educativo orientado a la  creación de oraciones, con el apoyo del docente un estudiante de primaria podrá conocer, identificar y crear sus propias oraciones que tendran un mensaje oculto al ser cifrada y divertirse descifrando la oración , con Crypto Class aprendez de forma divertida .
 
 ![crypto class](https://4.bp.blogspot.com/-WWARTLqKoU8/W_yJq4DG8sI/AAAAAAAAJmQ/zVmYyxqhK508-P5yHUD0x6_A8W58wki3ACK4BGAYYCw/s1600/CongratsClass%2Bof2018%2521.png)
 
@@ -26,8 +26,9 @@ Crypto Class es una aplicación orientada a las necesidades de los docentes ya q
 ### Decisiones de diseño
 
 El diseño fue orientado para niños de primaria entre los 6 a 8 años de edad, por ello la interfaz tiene un fondo llamativo y relacionado a la escula donde aprenderaz jugando. 
-La caja de texto tiene una fondo ligeramente oscuro que da contraste con las letras blancas, el tipo de texto usado es 'Allerta Stencil', sans-serif.
- La primera ventana nos muestra la bienvenida a la aplicación donde nos explica brevemente que es Crypto Class y que pasos debemos considerar para poder usarla, la página de bienvenida tambien contiene links de apoyo para el docente y para los estudiantes para poder resolver dudas de conceptos relaciondos a la aplicación, luego de ello nos encontramos con los botones de las principales funciones de la aplicación (cifrar y descifrar), cada uno de los botones nos dirige a una nueva ventana donde podremos cifrar la oración o descifrar segun sea el caso, ademas de ello cuenta con la parte de la clave secreta que es la clave para poder revelar el mensaje de nuestra oración , para poder tener la clave se ha usado un "input type range", el cual hace mas divertido el uso de la aplicación pues al deslizarla se revelara el valor de nuestra clave secreta. 
+- La caja de texto tiene un fondo ligeramente oscuro que da contraste con las letras blancas.
+- El tipo de texto usado es 'Allerta Stencil', sans-serif.
+- La primera ventana nos muestra la bienvenida a la aplicación donde nos explica brevemente que es Crypto Class y que pasos debemos considerar para poder usarla, la página de bienvenida tambien contiene links de apoyo para el docente y para los estudiantes para poder resolver dudas de conceptos relaciondos a la aplicación, luego de ello nos encontramos con los botones de las principales funciones de la aplicación (cifrar y descifrar), cada uno de los botones nos dirige a una nueva ventana donde podremos cifrar la oración o descifrar segun sea el caso, ademas de ello cuenta con la parte de la clave secreta que es la clave para poder revelar el mensaje de nuestra oración , para poder tener la clave se ha usado un "input type range", el cual hace mas divertido el uso de la aplicación pues al deslizarla se revelara el valor de nuestra clave secreta. 
  Para finalizar en la parte final o footer se encuentra las redes sociales de la aplicación para poder ser compartida entre otros docentes.
 
 ![crypto class](https://3.bp.blogspot.com/-77HGSJiC6NU/XAAUtMqUFII/AAAAAAAAJoY/eb9yBIO2P24gmhCj7ggHGvyfynrhGbXcACLcBGAs/s640/inicio.png)
