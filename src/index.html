@@ -4,49 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="Crypto Class" content="Crypto Class un juego educativo para crear oraciones.">
     <title>Crypto Class</title>
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/library.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">  
   </head>
   <body>
     <div id="root"></div>
-    <div id="inicio">
-      <section>
-        <head div="head">
-          <h1></h1>
-        </head>
-        <main class="inicio">
+      
+        <main class="bienvenida1" id="parteinicio0" >
+            <div id="bienvenida">
+              <div class="titulo1">
+                  <h2>Bienvenido a Crypto Class</h2>
+              </div> 
+                <h4>¿Qué es Cripto Class?</h4>
+                <p class="descripcion">Cripto Class es un juego educativo donde crearás oraciones compuestas que podrás cifrar y descubrir el mensaje encriptado que tiene oculto.</p>
+                <img src="https://image.flaticon.com/icons/svg/1162/1162923.svg" alt="Crypto Class" width="150px" height="150px;">
+                <h4>¿Eres profesor?</h4>
+                <p>Conoce más de Cripto Class <a href="https://joanlazo.blogspot.com/2018/11/cripto-class.html" target="_blank" class="links">aquí.</a></p>
+            <button class="button" id="btn-jugar">Jugar</button>
+              </div>
+        </main>
+
+        <main class="inicio" id="inicio">
           <div id="textoinicio">
-              <h1>Bienvenido a Crypto Class</h1>
-              <p>¿Qué es Cripto Class?</p>
-              <p>Cripto Class es un juego educativo donde podras crear oraciones compuestas y descubrir el mensaje encriptado que tiene oculto.
-               <P>Pasos para jugar:</P> 
+            <div class="titulo2">
+                <h2>¡Vamos a jugar creando oraciones!</h2>
+            </div>
+               <p>Pasos para jugar:</p> 
                <ol>
-                 <li>Piensa en una <span>oración compuesta</span> .¡La que tu desees!. Si no recuerdas que es una  oración compuesta <a href="https://joanlazo.blogspot.com/2018/11/oraciones-compuestas.html" target="_blank" alt ="Como hacer una oración">haz click.</a></li>
+                 <li>Piensa en una <span>oración compuesta</span> .¡La que tu desees!. Si no recuerdas que es una  oración compuesta haz click <a href="https://joanlazo.blogspot.com/2018/11/oraciones-compuestas.html" target="_blank" alt ="Como hacer una oración" class="links2"> aquí.</a></li>
                  <br>
                  <li>Escoge una opcion para ver que pasa con tu oración compuesta.</li>
                  <br>
                  <li>Piensa en como ah cambio tu oración y en que letra se ha remplezado.</li>
                  <br>
-                 <li>Intentalo otra vez.</li>
+                 <li>Inténtalo otra vez.</li>
                </ol>
               </div>
                <figure class="duda">
                   <p>¿Qué es cifrar o descifrar?</p>
           
-                  <a href="https://joanlazo.blogspot.com/2018/11/cifrar-y-descifrar.html" target="_blank"><img class="" src="https://image.flaticon.com/icons/svg/201/201571.svg" alt="Dudas sobre cifrar y descifrar" width="100px" height="105px" ></a>
+                  <a href="https://joanlazo.blogspot.com/2018/11/cifrar-y-descifrar.html" target="_blank"><img class="" src="https://image.flaticon.com/icons/svg/1162/1162919.svg" alt="Dudas sobre cifrar y descifrar" width="110px" height="105px" ></a>
               </figure>
             <button class="button" id="btn-inicio-cifrar" >Cifrar</button>
             <button class="button" id="btn-inicio-descifrar" >Descifrar</button>
         </main>
-        </section>
-    </div>
+      
    
     
       <main id="partecifrar">
-          <form id="cuerpo" class="cifrar">
-            <div id="texto1">
+        <div id="cuerpo" class="cifrar">
+            <div id="texto0">
                 <label for="text">Escribe tu oración compuesta
                   <textarea type="text" rows="5" cols="60" name="text" id="text" placeholder="Forma tu oración"></textarea>
                 </label>
@@ -69,47 +78,51 @@
               </div>
           
                <input class="button" type="button" id="btn-cifrar" value="Cifrar">
-               
+               <button class="button" id="btn-copiar">Copiar</button>
                <input class="button" type="button" value="Inicio" id="btn-volver1" >
-            </form>
+               
+        </div>
+          
       </main>
     
 
     <div>
         <main id="partedescifrar">
-            <form id="cuerpo_descifrar" class="descifrar">
+            <div id="cuerpo_descifrar" class="descifrar">
               <div id="texto1">
-                  <label for="text2">Escribe tu oración compuesta secreta
-                    <textarea type="text" rows="5" cols="60" name="text1" id="text2" placeholder="Forma tu oración"></textarea>
-                  </label>
+                <label for="text2">Escribe tu oración compuesta secreta o pégala :
+                  <textarea type="text" rows="5" cols="60" name="text1" id="text2" placeholder="Forma tu oración secreta o pégala"></textarea>
+                </label>
+                
+            </div>
+              <div>
+                <br>
+                  <label for="desplazamiento2">Desliza la barra
+                    <input type="range" min="1" max="100" value="1" name="offset" id="desplazamiento2" class="barra">
+                  </label> 
+                  <label>Tu clave secreta es: <span id="clave2"></span></label>
                   
               </div>
-                <div>
-                  <br>
-                    <label for="desplazamiento2">Desliza la barra
-                      <input type="range" min="1" max="100" value="1" name="offset" id="desplazamiento2" class="barra">
-                    </label> 
-                    <label>Tu clave secreta es: <span id="clave2"></span></label>
-                    
-                </div>
-                 
-                <div class="respuestadescifrar">
-                    <label for="respuesta2">Mira tu oración descifrada
-                      <textarea name="textorespuesta" id="respuesta2" cols="60" rows="5" placeholder="Tu oración descifrada es ..."></textarea>
-                    </label> 
-                    
-                </div>
-          
-                 <input class="button" type="button" id="btn-descifrar" value="Descifrar">
-                 <input class="button" type="button" value="Inicio" id="btn-volver2">
-                
-              </form>
+               
+              <div class="respuestadescifrar">
+                  <label for="respuesta2">Mira tu oración descifrada
+                    <textarea name="textorespuesta" id="respuesta2" cols="60" rows="5" placeholder="Tu oración descifrada es ..."></textarea>
+                  </label> 
+                  
+              </div>
+        
+               <input class="button" type="button" id="btn-descifrar" value="Descifrar">
+               <button class="button" id="btn-copiar2">Copiar</button>
+               <input class="button" type="button" value="Inicio" id="btn-volver2">
+               
+            </div>
         </main>
       </div>
      <footer id="final">
         <a href="https://www.facebook.com/mlazo0102" target="_blank"><img src="https://image.flaticon.com/icons/svg/185/185981.svg" alt="Facebook" width="50px" height="50px"></a> 
         <a href="https://www.instagram.com/joanlazomorales/" target="_blank"><img src="https://image.flaticon.com/icons/svg/185/185985.svg" alt="Instagram" width="50px" height="50px"></a>
-       <a href="https://twitter.com/LazoJoan" target="_blank"><img src="https://image.flaticon.com/icons/svg/185/185961.svg" alt="Twitter" width="50px" height="50px"></a> 
+       <a href="https://joanlazo.blogspot.com/" target="_blank"><img src="https://image.flaticon.com/icons/svg/179/179312.svg" alt="Blog Crypto Class" width="50px" height="50px"></a>
+        <a href="https://twitter.com/LazoJoan" target="_blank"><img src="https://image.flaticon.com/icons/svg/185/185961.svg" alt="Twitter" width="50px" height="50px"></a> 
      </footer>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
