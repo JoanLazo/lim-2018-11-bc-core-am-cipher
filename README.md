@@ -30,9 +30,11 @@ La caja de texto tiene una fondo ligeramente oscuro que da contraste con las let
  La primera ventana nos muestra la bienvenida a la aplicación donde nos explica brevemente que es Crypto Class y que pasos debemos considerar para poder usarla, la página de bienvenida tambien contiene links de apoyo para el docente y para los estudiantes para poder resolver dudas de conceptos relaciondos a la aplicación, luego de ello nos encontramos con los botones de las principales funciones de la aplicación (cifrar y descifrar), cada uno de los botones nos dirige a una nueva ventana donde podremos cifrar la oración o descifrar segun sea el caso, ademas de ello cuenta con la parte de la clave secreta que es la clave para poder revelar el mensaje de nuestra oración , para poder tener la clave se ha usado un "input type range", el cual hace mas divertido el uso de la aplicación pues al deslizarla se revelara el valor de nuestra clave secreta. 
  Para finalizar en la parte final o footer se encuentra las redes sociales de la aplicación para poder ser compartida entre otros docentes.
 
-![crypto class](https://1.bp.blogspot.com/-j4i_dSknUfs/W_ygwdzPOAI/AAAAAAAAJmc/mHNjj8JXC2ULf3m6e76F3tHwsPVFgvl2gCLcBGAs/s640/cryptoclass.png)
+![crypto class](https://3.bp.blogspot.com/-77HGSJiC6NU/XAAUtMqUFII/AAAAAAAAJoY/eb9yBIO2P24gmhCj7ggHGvyfynrhGbXcACLcBGAs/s640/inicio.png)
 
-![crypto class](https://4.bp.blogspot.com/-SxHABv01xhg/W_yhX4922CI/AAAAAAAAJmk/p6VS9qUbprQ8OUjgoNUtzAh_FkGDcv-rwCLcBGAs/s640/cifrar.png)
+![crypto class](https://1.bp.blogspot.com/-_VwuazomGI0/XAAUyvCl07I/AAAAAAAAJoc/YCrff2BjCDEbiXhd3GcH3eiBfBjNDo-ygCLcBGAs/s640/jugar.png)
+
+![crypto class](https://3.bp.blogspot.com/-SSd0lpEmGu0/XAAVAurszNI/AAAAAAAAJok/_av1KeO6zQsYcxF9UmoUbB8oivHmB1BZwCLcBGAs/s640/cifrar.png)
 
 
 ## Usuarios y su relación con el producto
