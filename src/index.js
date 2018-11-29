@@ -48,6 +48,29 @@ function jugarCifrar(){
 
 btnCifrar.addEventListener("click",jugarCifrar);
 
+//boton para copiar lo cifrado desde cifrar 
+
+const btnCopy = document.getElementById("btn-copiar");
+
+btnCopy.addEventListener('click', () => {
+  let aux = document.getElementById('respuesta');
+  aux.select();
+  // Copia el texto seleccionado
+  document.execCommand("copy");
+});
+
+
+//boton para copiar los descifrado desde descifrar
+
+const botonPegar = document.getElementById("btn-copiar2");
+
+botonPegar.addEventListener('click', () => {
+  let aux = document.getElementById('respuesta2');
+  aux.select();
+  // Copia el texto seleccionado
+  document.execCommand("copy");
+});
+
 //boton volver al inicio desde cifrar
 const btnInicio = document.getElementById("btn-volver1");
 

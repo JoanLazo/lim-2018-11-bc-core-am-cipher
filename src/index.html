@@ -54,7 +54,7 @@
    
     
       <main id="partecifrar">
-          <form id="cuerpo" class="cifrar">
+        <div id="cuerpo" class="cifrar">
             <div id="texto0">
                 <label for="text">Escribe tu oración compuesta
                   <textarea type="text" rows="5" cols="60" name="text" id="text" placeholder="Forma tu oración"></textarea>
@@ -78,41 +78,44 @@
               </div>
           
                <input class="button" type="button" id="btn-cifrar" value="Cifrar">
-               
+               <button class="button" id="btn-copiar">Copiar</button>
                <input class="button" type="button" value="Inicio" id="btn-volver1" >
-            </form>
+               
+        </div>
+          
       </main>
     
 
     <div>
         <main id="partedescifrar">
-            <form id="cuerpo_descifrar" class="descifrar">
+            <div id="cuerpo_descifrar" class="descifrar">
               <div id="texto1">
-                  <label for="text2">Escribe tu oración compuesta secreta
-                    <textarea type="text" rows="5" cols="60" name="text1" id="text2" placeholder="Forma tu oración"></textarea>
-                  </label>
+                <label for="text2">Escribe tu oración compuesta secreta o pégala :
+                  <textarea type="text" rows="5" cols="60" name="text1" id="text2" placeholder="Forma tu oración secreta o pégala"></textarea>
+                </label>
+                
+            </div>
+              <div>
+                <br>
+                  <label for="desplazamiento2">Desliza la barra
+                    <input type="range" min="1" max="100" value="1" name="offset" id="desplazamiento2" class="barra">
+                  </label> 
+                  <label>Tu clave secreta es: <span id="clave2"></span></label>
                   
               </div>
-                <div>
-                  <br>
-                    <label for="desplazamiento2">Desliza la barra
-                      <input type="range" min="1" max="100" value="1" name="offset" id="desplazamiento2" class="barra">
-                    </label> 
-                    <label>Tu clave secreta es: <span id="clave2"></span></label>
-                    
-                </div>
-                 
-                <div class="respuestadescifrar">
-                    <label for="respuesta2">Mira tu oración descifrada
-                      <textarea name="textorespuesta" id="respuesta2" cols="60" rows="5" placeholder="Tu oración descifrada es ..."></textarea>
-                    </label> 
-                    
-                </div>
-          
-                 <input class="button" type="button" id="btn-descifrar" value="Descifrar">
-                 <input class="button" type="button" value="Inicio" id="btn-volver2">
-                
-              </form>
+               
+              <div class="respuestadescifrar">
+                  <label for="respuesta2">Mira tu oración descifrada
+                    <textarea name="textorespuesta" id="respuesta2" cols="60" rows="5" placeholder="Tu oración descifrada es ..."></textarea>
+                  </label> 
+                  
+              </div>
+        
+               <input class="button" type="button" id="btn-descifrar" value="Descifrar">
+               <button class="button" id="btn-copiar2">Copiar</button>
+               <input class="button" type="button" value="Inicio" id="btn-volver2">
+               
+            </div>
         </main>
       </div>
      <footer id="final">

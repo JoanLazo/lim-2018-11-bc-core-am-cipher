@@ -124,8 +124,8 @@ input[type=range] {
     color: #31c5d8;
 }
 
-@media screen and (max-width:450px){
-    .inicio ,.cifrar ,.descifrar{
+@media screen and (max-width:600px){
+   .bienvenida1,.inicio ,.cifrar ,.descifrar , footer{
         width: 100%;    
     }
 }   
