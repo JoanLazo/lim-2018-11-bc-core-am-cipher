@@ -19,7 +19,7 @@
               </div> 
                 <h4>¿Qué es Cripto Class?</h4>
                 <p class="descripcion">Cripto Class es un juego educativo donde crearás oraciones compuestas que podrás cifrar y descubrir el mensaje encriptado que tiene oculto.</p>
-                <img src="https://image.flaticon.com/icons/svg/1162/1162923.svg" alt="Crypto Class" width="150px" height="150px;">
+                <img id="imagen1" src="https://image.flaticon.com/icons/svg/1162/1162923.svg" alt="Crypto Class" width="150px" height="150px;">
                 <h4>¿Eres profesor?</h4>
                 <p>Conoce más de Cripto Class <a href="https://joanlazo.blogspot.com/2018/11/cripto-class.html" target="_blank" class="links">aquí.</a></p>
             <button class="button" id="btn-jugar">Jugar</button>
@@ -28,7 +28,7 @@
 
         <main class="inicio" id="inicio">
           <div id="textoinicio">
-            <div class="titulo2">
+            <div class="titulo2" id="titulo2">
                 <h2>¡Vamos a jugar creando oraciones!</h2>
             </div>
                <p>Pasos para jugar:</p> 
@@ -67,7 +67,10 @@
                   <label for="desplazamiento">Desliza la barra
                     <input class="barra" type="range" min="1" max="100" value="1" name="offset" id="desplazamiento">
                   </label>
-                  <label>Tu clave secreta es: <span id="clave"></span></label>
+                  <div>
+                    <label>Tu clave secreta es: <span id="clave"></span></label>
+                  </div>
+                  
                </div>
                
               <div class="respuestacifrar">
@@ -100,7 +103,10 @@
                   <label for="desplazamiento2">Desliza la barra
                     <input type="range" min="1" max="100" value="1" name="offset" id="desplazamiento2" class="barra">
                   </label> 
-                  <label>Tu clave secreta es: <span id="clave2"></span></label>
+                  <div>
+                    <label>Tu clave secreta es: <span id="clave2"></span></label>
+                  </div>
+                  
                   
               </div>
                
@@ -119,10 +125,10 @@
         </main>
       </div>
      <footer id="final">
-        <a href="https://www.facebook.com/mlazo0102" target="_blank"><img src="https://image.flaticon.com/icons/svg/185/185981.svg" alt="Facebook" width="50px" height="50px"></a> 
-        <a href="https://www.instagram.com/joanlazomorales/" target="_blank"><img src="https://image.flaticon.com/icons/svg/185/185985.svg" alt="Instagram" width="50px" height="50px"></a>
-       <a href="https://joanlazo.blogspot.com/" target="_blank"><img src="https://image.flaticon.com/icons/svg/179/179312.svg" alt="Blog Crypto Class" width="50px" height="50px"></a>
-        <a href="https://twitter.com/LazoJoan" target="_blank"><img src="https://image.flaticon.com/icons/svg/185/185961.svg" alt="Twitter" width="50px" height="50px"></a> 
+        <a href="https://www.facebook.com/mlazo0102" target="_blank"><img id="footer1" src="https://image.flaticon.com/icons/svg/185/185981.svg" alt="Facebook" width="50px" height="50px"></a> 
+        <a href="https://www.instagram.com/joanlazomorales/" target="_blank"><img id="footer2" src="https://image.flaticon.com/icons/svg/185/185985.svg" alt="Instagram" width="50px" height="50px"></a>
+       <a href="https://joanlazo.blogspot.com/" target="_blank"><img id="footer3" src="https://image.flaticon.com/icons/svg/179/179312.svg" alt="Blog Crypto Class" width="50px" height="50px"></a>
+        <a href="https://twitter.com/LazoJoan" target="_blank"><img id="footer4" src="https://image.flaticon.com/icons/svg/185/185961.svg" alt="Twitter" width="50px" height="50px"></a> 
      </footer>
     <script src="cipher.js"></script>
     <script src="index.js"></script>

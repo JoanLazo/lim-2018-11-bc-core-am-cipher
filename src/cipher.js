@@ -1,4 +1,4 @@
-const cipherEncode =  (string,offset) => {
+const cipherEncode =  (offset,string) => {
   let subjectText;     
   let subjectAscii;  
   let textResultado = "";
@@ -22,7 +22,7 @@ const cipherEncode =  (string,offset) => {
   return textResultado;
   } 
 
-  const cipherDecode = (string,offset) => {
+  const cipherDecode = (offset,string) => {
     let subjectTextTwo;     
     let subjectAsciiTwo;
     let textResultTwo = "";
