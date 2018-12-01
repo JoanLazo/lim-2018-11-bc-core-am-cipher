@@ -21,11 +21,16 @@ background-size: 100% 1.2em;
 textarea{
     min-height: 100px;
     max-height: 200px;
-    max-width: 100%;
+    max-width: 90%;
     border-radius: 7px;
     margin-top: 20px;
+    
 }
 
+.respuestadescifrar, .respuestacifrar{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
 .button{
     background:#1697a8;
     color: #fff;
