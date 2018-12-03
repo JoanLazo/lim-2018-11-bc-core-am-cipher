@@ -7,7 +7,7 @@
     botonCifrar.addEventListener("click", () => {
      const inputString = document.getElementById("text").value;
      const offsetValue = document.getElementById("desplazamiento").value;
-     textResult.innerHTML = cipher.encode(inputString,parseInt(offsetValue))
+     textResult.innerHTML = cipher.encode(parseInt(offsetValue),inputString);
     })
 
 
@@ -19,7 +19,7 @@
       botonDescifrarTwo.addEventListener("click", () => {
         const inputString = document.getElementById("text2").value;
         const offsetValue = document.getElementById("desplazamiento2").value;
-        textResultOne.innerHTML = cipher.decode(inputString,parseInt(offsetValue))
+        textResultOne.innerHTML = cipher.decode(parseInt(offsetValue),inputString);
       })
 
   //ocultando partes de div cifrar y descifrar
