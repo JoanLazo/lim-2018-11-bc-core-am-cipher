@@ -145,7 +145,7 @@ input[type=range] {
 }
     
 /* Este es la parte de footer donde estan las redes sociales */
-#footer1, #footer2 , #footer3 , #footer4{
+#footer1,#footer2 ,#footer3 ,#footer4{
     margin-bottom: 30px;
     margin-top: 30px;
     width: 50px;
@@ -159,8 +159,8 @@ input[type=range] {
 }
 
 /* Esta es la parte de apariencia del responsive segun las diferentes medidas de la pantalla */
-@media screen and (max-width:600px) and (min-width:320px)  {
-    #bienvenida,#textoinicio ,.cifrar ,.descifrar{
+@media screen and (max-width:600px) and (min-width:320px){
+    #bienvenida,#textoinicio,.cifrar ,.descifrar{
         width: 90%;
         font-size: 16px; 
 
@@ -172,7 +172,7 @@ input[type=range] {
     #titulo2{
         font-size: 18px;    
     }
-    #footer1, #footer2, #footer3, #footer4{
+    #footer1,#footer2,#footer3,#footer4{
         width: 40px;
         height: 40px;
         
@@ -196,8 +196,8 @@ input[type=range] {
         padding-top: 25px;
     }
 }   
-@media screen and (max-width:768px) and (min-width:520px)  {
-    #bienvenida,#textoinicio ,.cifrar ,.descifrar{
+@media screen and (max-width:768px) and (min-width:520px){
+    #bienvenida,#textoinicio,.cifrar ,.descifrar{
         margin-top: 10%;
         width: 65%; 
         height: 50%;   
@@ -208,8 +208,8 @@ input[type=range] {
     }
 } 
 
-@media screen and (max-width:1024px) and (min-width:770px)  {
-    #bienvenida,#textoinicio ,.cifrar ,.descifrar{
+@media screen and (max-width:1024px) and (min-width:770px){
+    #bienvenida,#textoinicio,.cifrar ,.descifrar{
         margin-top: 22%;
         width: 75%; 
         height: 90%;
