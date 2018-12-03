@@ -1,4 +1,4 @@
-
+ /* Esta es la parte del fondo y el texto */
 body{
     background-image: url("./img/fondo.jpg");   
     background-size: 100vw 100vh;
@@ -10,6 +10,7 @@ body{
     
 }
 
+/* Esta es la parte de las textarea solo el fondo de textura como lineas de papel */
 textarea{
 background-color: #fff;
 background-image:
@@ -18,6 +19,7 @@ linear-gradient(#eee .1em, transparent .1em);
 background-size: 100% 1.2em;
 }
 
+/* Esta es la parte de las medidas del los textareas */
 textarea{
     min-height: 100px;
     max-height: 200px;
@@ -26,11 +28,13 @@ textarea{
     margin-top: 20px;
     
 }
-
+/* Esta es la parte de los textarea finales de cifra y descifrar para que los botones esten distanciados de ella */
 .respuestadescifrar, .respuestacifrar{
     padding-top: 30px;
     padding-bottom: 20px;
 }
+
+/* Esta es la parte del diseño de los botones  */
 .button{
     background:#1697a8;
     color: #fff;
@@ -43,23 +47,28 @@ textarea{
     font-size: 18px;
     
 }
+
+/* Esta es la parte del boton al pasar el raton */
 .button:hover{
     cursor: pointer;
 }
 
+/* Esta es la imagen en las instracciones para saber que es cifrar o descifrar */
 .duda{
     text-align: center;
 }
-
+/* Esta es la parte de las instrucciones del juego */
 #textoinicio{
     text-align: justify;
 }
 
+/* Esta es la parte de los textarea superiores de cifrar y descifrar  */
  #texto1 , #texto0{
      padding-top: 8%;
      padding-bottom: 5%;
  }
 
+ /* Estos son las partes divididas para que se vean como ventanas diferentes  */
 .bienvenida1,.inicio ,.cifrar , .descifrar{
     width: 550px;
     margin: auto;
@@ -69,15 +78,20 @@ textarea{
     margin-top: 40px;
     border-radius: 7px;
     font-size: 20px;
-    
 }
+
+/* Esta es la parte de la descripcion de que es crypto class */
 .descripcion{
     text-align: justify;
 } 
+
+/* Estos son los titulos de bienvenida y las instruciones del juego */
  .titulo1 ,.titulo2{
     text-align: center;
     font-size: 20px;
 }
+
+/* Esta es la parte de la barra de desplazamiento para la clave */
 input[type=range] {
     height: 34px;
     margin: 10px 0;
@@ -111,17 +125,19 @@ input[type=range] {
     cursor: pointer;
 }
     
+/* Este es la parte de footer donde estan las redes sociales */
 #final{
     margin-bottom: 30px;
     margin-top: 30px;
 }
 
-
+/* Esta es la apariencia de las anclas a los links hacia el blog */
 .links , .links2{
     text-decoration: none;
     color: #31c5d8;
 }
 
+/* Esta es la parte de apariencia del responsive segun las diferentes medidas de la pantalla */
 @media screen and (max-width:600px) and (min-width:320px)  {
     .bienvenida1,.inicio ,.cifrar ,.descifrar{
         width: 90%;
