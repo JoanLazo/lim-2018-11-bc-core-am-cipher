@@ -10,6 +10,16 @@ body{
     
 }
 
+/* imagen de bienvenida e instrucciones */
+#imagen1{
+    width: 150px;
+    height: 150px;
+}
+
+#imagen2{
+    width: 110px;
+    height: 105px; 
+}
 /* Esta es la parte de las textarea solo el fondo de textura como lineas de papel */
 textarea{
 background-color: #fff;
@@ -45,6 +55,7 @@ textarea{
     margin-top: 20px;
     margin-bottom: 10px;
     font-size: 18px;
+    text-align: center;
     
 }
 
@@ -53,6 +64,9 @@ textarea{
     cursor: pointer;
 }
 
+#botoninstrucciones{
+    text-align: center;
+}
 /* Esta es la imagen en las instracciones para saber que es cifrar o descifrar */
 .duda{
     text-align: center;
@@ -69,7 +83,7 @@ textarea{
  }
 
  /* Estos son las partes divididas para que se vean como ventanas diferentes  */
-.bienvenida1,.inicio ,.cifrar , .descifrar{
+ #bienvenida,#textoinicio ,.cifrar , .descifrar{
     width: 550px;
     margin: auto;
     background: rgba(0, 0,0, 0.5);
@@ -89,6 +103,11 @@ textarea{
  .titulo1 ,.titulo2{
     text-align: center;
     font-size: 20px;
+}
+
+/* Esta es la parte del texto de las instrucciones */
+.paso1 , .paso2, .paso3 , .paso4{
+    padding: 10px;
 }
 
 /* Esta es la parte de la barra de desplazamiento para la clave */
@@ -126,9 +145,11 @@ input[type=range] {
 }
     
 /* Este es la parte de footer donde estan las redes sociales */
-#final{
+#footer1,#footer2 ,#footer3 ,#footer4{
     margin-bottom: 30px;
     margin-top: 30px;
+    width: 50px;
+    height: 50px;
 }
 
 /* Esta es la apariencia de las anclas a los links hacia el blog */
@@ -138,8 +159,8 @@ input[type=range] {
 }
 
 /* Esta es la parte de apariencia del responsive segun las diferentes medidas de la pantalla */
-@media screen and (max-width:600px) and (min-width:320px)  {
-    .bienvenida1,.inicio ,.cifrar ,.descifrar{
+@media screen and (max-width:600px) and (min-width:320px){
+    #bienvenida,#textoinicio,.cifrar ,.descifrar{
         width: 90%;
         font-size: 16px; 
 
@@ -151,7 +172,7 @@ input[type=range] {
     #titulo2{
         font-size: 18px;    
     }
-    #footer1, #footer2, #footer3, #footer4{
+    #footer1,#footer2,#footer3,#footer4{
         width: 40px;
         height: 40px;
         
@@ -175,8 +196,8 @@ input[type=range] {
         padding-top: 25px;
     }
 }   
-@media screen and (max-width:768px) and (min-width:520px)  {
-    .bienvenida1,.inicio ,.cifrar ,.descifrar{
+@media screen and (max-width:768px) and (min-width:520px){
+    #bienvenida,#textoinicio,.cifrar ,.descifrar{
         margin-top: 10%;
         width: 65%; 
         height: 50%;   
@@ -187,8 +208,8 @@ input[type=range] {
     }
 } 
 
-@media screen and (max-width:1024px) and (min-width:770px)  {
-    .bienvenida1,.inicio ,.cifrar ,.descifrar{
+@media screen and (max-width:1024px) and (min-width:770px){
+    #bienvenida,#textoinicio,.cifrar ,.descifrar{
         margin-top: 22%;
         width: 75%; 
         height: 90%;
