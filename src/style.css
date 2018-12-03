@@ -105,10 +105,6 @@ textarea{
     font-size: 20px;
 }
 
-/* Esta es la parte del texto de las instrucciones */
-.paso1 , .paso2, .paso3 , .paso4{
-    padding: 10px;
-}
 
 /* Esta es la parte de la barra de desplazamiento para la clave */
 input[type=range] {
