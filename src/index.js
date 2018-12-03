@@ -23,7 +23,7 @@
       })
 
   //ocultando partes de div cifrar y descifrar
-document.getElementById("inicio").style.display = "none"
+document.getElementById("textoinicio").style.display = "none"
 document.getElementById("partecifrar").style.display = "none"
 document.getElementById("partedescifrar").style.display = "none"
 
@@ -31,8 +31,8 @@ document.getElementById("partedescifrar").style.display = "none"
 const btnJugarInicio= document.getElementById("btn-jugar");
 
 function btnJugar(){
-  document.getElementById("inicio").style.display = "block"
-  document.getElementById("parteinicio0").style.display = "none"
+  document.getElementById("textoinicio").style.display = "block"
+  document.getElementById("bienvenida").style.display = "none"
 }
 
 btnJugarInicio.addEventListener("click",btnJugar);
@@ -43,7 +43,7 @@ const btnCifrar= document.getElementById("btn-inicio-cifrar");
 function jugarCifrar(){
    
   document.getElementById("partecifrar").style.display = "block"
-  document.getElementById("inicio").style.display = "none"
+  document.getElementById("textoinicio").style.display = "none"
 }
 
 btnCifrar.addEventListener("click",jugarCifrar);
@@ -76,7 +76,7 @@ const btnInicio = document.getElementById("btn-volver1");
 
 function volverIncioOne(){
 
-  document.getElementById("inicio").style.display = "block"
+  document.getElementById("textoinicio").style.display = "block"
   document.getElementById("partecifrar").style.display = "none"
 }
 btnInicio.addEventListener("click",volverIncioOne);
@@ -87,7 +87,7 @@ const btnDescifrar = document.getElementById("btn-inicio-descifrar");
 function jugarDescifrar(){
 
   document.getElementById("partedescifrar").style.display = "block"
-  document.getElementById("inicio").style.display = "none"
+  document.getElementById("textoinicio").style.display = "none"
 }
 btnDescifrar.addEventListener("click",jugarDescifrar);
 
@@ -96,7 +96,7 @@ btnDescifrar.addEventListener("click",jugarDescifrar);
 const  btnIncioDescifrar = document.getElementById("btn-volver2");
 function volverDescifrar(){
   
-  document.getElementById("inicio").style.display = "block"
+  document.getElementById("textoinicio").style.display = "block"
   document.getElementById("partedescifrar").style.display = "none"
 }
 btnIncioDescifrar.addEventListener("click",volverDescifrar);
